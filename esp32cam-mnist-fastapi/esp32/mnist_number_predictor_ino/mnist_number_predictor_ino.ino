@@ -26,11 +26,11 @@
 #define BUTTON_PIN 14    // Safe button pin
 
 // ====== WIFI CONFIG ======
-const char *ssid = "VodafoneMobileWiFi-78658B_2.4G";
-const char *password = "5fF6b56n85g296y5";
+const char *ssid = "**************";
+const char *password = "*************";
 
 // ====== API CONFIG ======
-String serverUrl = "http://192.168.0.158:8000/predict";
+String serverUrl = "http://:8000/predict";
 
 // ====== Resize target ======
 const int TARGET_W = 28;
