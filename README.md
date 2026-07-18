@@ -29,18 +29,18 @@ A complete pipeline where the ESP32-CAM captures an image, preprocesses it (gray
 **End‑to‑end workflow**
 ```
 +------------------+        Wi‑Fi (HTTP POST)        +------------------------+
-|   ESP32‑CAM      |  -----------------------------> |   Laptop (Python API)  |
-|                  |                                  |                        |
-| Capture image    |                                  | Receive 28×28 array    |
-| Grayscale        |                                  | Normalize              |
-| Threshold        |                                  | Run MNIST model        |
-| Resize to 28×28  |                                  | Return prediction      |
-| Send array       |                                  |                        |
-+------------------+                                  +------------------------+
+|   ESP32‑CAM      |  -----------------------------> |  Laptop (Python API)   |
+|                  |                                 |                        |
+| Capture image    |                                 | Receive 28×28 array    |
+| Grayscale        |                                 | Normalize              |
+| Threshold        |                                 | Run MNIST model        |
+| Resize to 28×28  |                                 | Display prediction     |
+| Send array       |                                 |                        |
++------------------+                                 +------------------------+
 ```
 
 
-**Includes:**
+**[esp32cam-mnist-fastapi](./esp32cam-mnist-fastapi):**
 - ESP32-CAM capture + preprocessing  
 - JSON payload transmission  
 - FastAPI inference server  
