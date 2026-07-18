@@ -40,7 +40,7 @@ A complete pipeline where the ESP32-CAM captures an image, preprocesses it (gray
 ```
 
 
-**Includes:**
+**[esp32cam-mnist-fastapi](./esp32cam-mnist-fastapi):**
 - ESP32-CAM capture + preprocessing  
 - JSON payload transmission  
 - FastAPI inference server  
